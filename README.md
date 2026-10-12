@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/kanatallow/Open-Meets/releases/download/v0.12.3/Open-Meets-icon.png" width="180" alt="Open Meets">
+  <img src="https://github.com/kanatallow/Open-Meets/releases/download/v0.15.0/Open-Meets-icon.png" width="180" alt="Open Meets">
 </p>
 
 <h1 align="center">Open Meets</h1>
@@ -14,26 +14,27 @@
 
 Open Meets 是面向 Android 手机和平板的 Tamagotchi Meets / On 模拟器。导入自己的 ROM，在手机上继续养育、保存进度、切换版本，也可以通过 WebMeets 接收礼物。
 
-**免费使用 · Android 8.0+ · ARM64 · 中文 / English**
+**免费使用 · Android 8.0+ · ARM64 · 正式版 0.15.0**
+
+**支持简体中文和英文界面。English UI is supported.** Choose **English** on the welcome screen or under **⋯ → 语言 / Language**. Menus, help and notifications are available in English; game text follows your ROM.
+
+本版已内置 64 位 Mixing Meets 客户端。
 
 本仓库用于发布安装包、更新说明和使用指南，不公开应用源代码。安装包不附带 ROM 或测试存档。
 
 ## 下载与安装
 
-当前版本：**0.12.3（build 17）**。
+当前正式版：**Open Meets 0.15.0**。
 
-| 版本 | 下载 | 适用场景 |
-| --- | --- | --- |
-| 标准版 | [Open-Meets-0.12.3-arm64.apk](https://github.com/kanatallow/Open-Meets/releases/download/v0.12.3/Open-Meets-0.12.3-arm64.apk) · 1.8 MiB | 日常养育、后台提醒、存档管理、WebMeets 蓝牙收礼 |
-| Mixing Meets 合并版 | [Open-Meets-0.12.3-Mixing-arm64.apk](https://github.com/kanatallow/Open-Meets/releases/download/v0.12.3/Open-Meets-0.12.3-Mixing-arm64.apk) · 86.5 MiB | 包含标准版功能，并内置 64 位 Mixing Meets 客户端；实验性版本 |
+**[下载 Open-Meets-0.15.0-arm64.apk · 86.5 MiB](https://github.com/kanatallow/Open-Meets/releases/download/v0.15.0/Open-Meets-0.15.0-arm64.apk)**
 
-1. 下载一个 APK，传到 Android 设备并安装。仅在安装时按系统提示允许所用浏览器或文件管理器安装应用。
+包含日常养育、后台提醒、存档管理、WebMeets 收礼与内置 Mixing Meets 客户端。
+
+1. 下载 APK，传到 Android 设备并安装。仅在安装时按系统提示允许所用浏览器或文件管理器安装应用。
 2. 打开 **Open Meets**，导入自己的 ROM 或未加密 ZIP。ZIP 中的受支持 `.bin` 文件会自动识别，可一次导入多个版本。
 3. 允许通知，在 **⋯ → 后台养育与提醒** 中查看本机品牌的后台设置指引。
 
-**升级请直接覆盖安装，先导出存档备份，不要卸载旧版。** 两个版本使用同一应用 ID 和签名，共用本地 ROM 与进度，不能同时作为两个独立应用安装。若设备拒绝切换安装包，请保留现有安装和存档。
-
-合并版在系统应用信息中可能显示 **1.4.3**，这是内置 Mixing Meets 客户端的兼容编号；本次发行对应 **build 17**。
+**升级请直接覆盖安装，先导出存档备份，不要卸载旧版。** 沿用原应用 ID 和签名，保留本地 ROM 与进度。
 
 ## 功能
 
@@ -44,7 +45,7 @@ Open Meets 是面向 Android 手机和平板的 Tamagotchi Meets / On 模拟器�
 - **中文 / English 界面**：菜单、帮助和通知可切换语言；游戏文字由 ROM 决定。
 - **手机与平板适配**：横竖屏、圆形 A/B/C 按键、多点触控 A+C。
 - **WebMeets 收礼**：通过蓝牙从另一台设备上的 WebMeets 接收物品。
-- **可选 Mixing Meets**：合并版从游戏内 App 的“去玩 / Visit”或“接收礼物 / Present”进入内置客户端。
+- **内置 Mixing Meets**：从游戏内 App 的“去玩 / Visit”或“接收礼物 / Present”进入内置客户端。
 
 ## 快速上手
 
@@ -69,7 +70,7 @@ Open Meets 是面向 Android 手机和平板的 Tamagotchi Meets / On 模拟器�
 
 ### 内置 Mixing Meets
 
-安装合并版后，从游戏内 **App → 去玩 / Visit** 或 **接收礼物 / Present** 进入。客户端已适配 ARM64，在线功能依赖 Mixing Meets 社区服务。可通过 [Mixing Meets 支持页面](https://mixing-meets.com/support)支持社区运营。
+从游戏内 **App → 去玩 / Visit** 或 **接收礼物 / Present** 进入。客户端已适配 ARM64，在线功能依赖 Mixing Meets 社区服务。可通过 [Mixing Meets 支持页面](https://mixing-meets.com/support)支持社区运营。
 
 WebMeets 收礼和 Mixing Meets 往返已完成 Android 模拟器链路验证；实体设备的蓝牙与系统兼容性仍需进一步验证。当前不支持红外或与实体玩具直连，Mixing Meets 婚配尚未完成验证。
 
@@ -82,9 +83,13 @@ WebMeets 收礼和 Mixing Meets 往返已完成 Android 模拟器链路验证；
 
 暂不支持 Tamagotchi SOME（韩文）。ROM 由用户自行提供。
 
+## 版本显示
+
+发行版本为 **0.15.0**。Android 应用信息中仍可能显示 **1.4.3**，这是内置客户端所需的兼容编号；本次使用的安装包为 build 17。
+
 ## 反馈与致谢
 
-遇到问题请[提交 Issue](https://github.com/kanatallow/Open-Meets/issues)，附上设备型号、Android 版本、安装包版本和复现步骤。请勿附带 ROM、个人存档或账号凭据。
+遇到问题请[提交 Issue](https://github.com/kanatallow/Open-Meets/issues)，附上设备型号、Android 版本、版本和复现步骤。请勿附带 ROM、个人存档或账号凭据。
 
 模拟器基于 [oreo-fox/tg18-emu](https://github.com/oreo-fox/tg18-emu)，感谢上游作者、WebMeets 和 Mixing Meets 社区。上游 MIT 许可及其他组件许可保留在应用中。
 
@@ -96,20 +101,23 @@ Open Meets 免费提供，仅供非商业使用，禁止倒卖、收费分发、
 
 ## English
 
-**Open Meets** brings Tamagotchi Meets / On to Android phones and tablets. Import your own ROM, care for your pet, keep separate progress for each version, and receive gifts through WebMeets.
+**Open Meets** brings Tamagotchi Meets / On to Android phones and tablets. Import your own ROM, care for your pet, keep separate progress for each version, receive gifts through WebMeets, and use the built-in ARM64 Mixing Meets client.
+
+**English UI is fully supported:** menus, settings, help and notifications are available in English. Select **English** on the welcome screen or under **Settings → Language**. Game text depends on your ROM; English ON ROMs are supported.
 
 This repository hosts downloads, release notes and user documentation. Application source code is not published here. No ROMs or sample saves are included.
 
 ### Download
 
-**Android 8.0 or later · ARM64 · Release 0.12.3 / build 17**
+**Android 8.0 or later · ARM64 · Stable release 0.15.0**
 
-- [Standard edition — 1.8 MiB](https://github.com/kanatallow/Open-Meets/releases/download/v0.12.3/Open-Meets-0.12.3-arm64.apk): emulator, background care, notifications, save management and WebMeets BLE reception.
-- [Mixing Meets edition — 86.5 MiB](https://github.com/kanatallow/Open-Meets/releases/download/v0.12.3/Open-Meets-0.12.3-Mixing-arm64.apk): includes the standard features and an embedded ARM64 Mixing Meets client. Experimental.
+**[Download Open-Meets-0.15.0-arm64.apk — 86.5 MiB](https://github.com/kanatallow/Open-Meets/releases/download/v0.15.0/Open-Meets-0.15.0-arm64.apk)**
 
-Install one APK, open **Open Meets**, and import your own ROM or an unencrypted ZIP. Choose English on the welcome screen or under **Settings → Language**. Game text follows the ROM language.
+Includes the emulator, background care, notifications, save management, WebMeets BLE reception and the embedded ARM64 Mixing Meets client.
 
-**Back up your save and update over the existing installation. Do not uninstall first.** Both editions share the same app identity, signing certificate and local progress. They cannot be installed side by side. If Android rejects an edition switch, keep the current installation and saves. The Mixing edition may display **1.4.3** in system app information for client compatibility; this release is **build 17**.
+Install the APK, open **Open Meets**, and import your own ROM or an unencrypted ZIP. Choose **English** on the welcome screen or under **⋯ → 语言 / Language**.
+
+**Back up your save and update over the existing installation. Do not uninstall first.** The app keeps the existing app identity and signing certificate to preserve local ROMs and progress.
 
 ### Everyday use
 
@@ -123,11 +131,15 @@ Install one APK, open **Open Meets**, and import your own ROM or an unencrypted 
 
 For **WebMeets**, choose **Connection → Download** in the game, enable Bluetooth and allow Nearby devices. Open [WebMeets](https://tamagotchicenter.com/webmeets/items) in Chrome on a Mac or another Android device, select an item and connect to **TMGC_meets**. The receiving device must support BLE peripheral advertising. Its Bluetooth name changes temporarily during reception and is restored afterward.
 
-In the **Mixing edition**, **App → Visit** and **App → Present** open the embedded client. Online features depend on the Mixing Meets community service; [support the community here](https://mixing-meets.com/support).
+**App → Visit** and **App → Present** open the embedded Mixing Meets client. Online features depend on the Mixing Meets community service; [support the community here](https://mixing-meets.com/support).
 
 WebMeets gift reception and Mixing Meets visit/return have been checked through Android emulator integration tests. Physical-device Bluetooth and compatibility need further testing. Infrared and direct links to physical toys are unsupported; Mixing Meets marriage has not yet been validated.
 
 Supported ROMs: **ON** Fairy, Magic and Wonder Garden (English); **MEETS** Fairy, Magical, Pastel, Sanrio, Sweets and Fantasy (Japanese). Korean **SOME** ROMs are not supported.
+
+### Version shown by Android
+
+The release version is **0.15.0**. Android app information may still show **1.4.3**, the compatibility version required by the embedded client. The packaged app is build 17.
 
 ### Feedback and credits
 
