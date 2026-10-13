@@ -14,11 +14,11 @@
 
 Open Meets 是面向 Android 手机和平板的 Tamagotchi Meets / On 模拟器。导入自己的 ROM，在手机上继续养育、保存进度、切换版本，也可以通过 WebMeets 接收礼物。
 
-**免费使用 · Android 8.0+ · ARM64 · 正式版 0.16.0**
+**免费使用 · Android 8.0+ · ARM64 · 正式版 0.3.0**
 
 **支持简体中文和英文界面。English UI is supported.** Choose **English** on the welcome screen or under **⋯ → 语言 / Language**. Menus, help and notifications are available in English; game text follows your ROM.
 
-本版保留完整的 64 位 Mixing Meets 客户端，新增普通模式与离线养育时间同步。
+本版修复游戏内相机无法使用的问题，为智能手表和折叠屏外屏新增小屏模式，并支持一键截屏，记录宝宝的精彩瞬间。保留完整的 64 位 Mixing Meets 客户端。
 
 **强烈建议华为鸿蒙用户关闭后台驻留，采用普通模式，确保关闭程序后养育时间仍与现实时间同步，宠物正常成长。**
 
@@ -26,9 +26,9 @@ Open Meets 是面向 Android 手机和平板的 Tamagotchi Meets / On 模拟器�
 
 ## 下载与安装
 
-当前正式版：**Open Meets 0.16.0**。
+当前正式版：**Open Meets 0.3.0**。
 
-**[下载 Open-Meets-0.16.0-arm64.apk · 86.6 MiB](https://github.com/kanatallow/Open-Meets/releases/download/v0.16.0/Open-Meets-0.16.0-arm64.apk)**
+**[下载 Open-Meets-0.3.0-arm64.apk · 86.6 MiB](https://github.com/kanatallow/Open-Meets/releases/download/v0.3.0/Open-Meets-0.3.0-arm64.apk)**
 
 包含日常养育、后台提醒、存档管理、WebMeets 收礼与内置 Mixing Meets 客户端。
 
@@ -45,7 +45,10 @@ Open Meets 是面向 Android 手机和平板的 Tamagotchi Meets / On 模拟器�
 - **普通模式**：系统预先安排照料通知；关闭程序后的养育时间与现实时间同步，重新打开时同步离线成长。
 - **增强模式（后台驻留）**：实时运行，可让部分安卓设备在小窗中持续运行，响应更迅速。自动降为普通模式后，回到前台恢复增强模式；手动选择普通模式则保持不变。
 - **统一暂停**：普通和增强模式均暂停成长与提醒，重新打开仍保持暂停，恢复时不补算暂停时长。
-- **两种外观**：真机蛋形外壳与极简大屏，共享同一份进度。
+- **三种外观**：真机蛋形外壳、极简大屏与小屏模式，共享同一份进度。小屏模式读取当前窗口尺寸与屏幕形状，支持双指捏合调整并保存画面大小。
+- **游戏内相机修复**：相机动画正常播放，不再误触发蓝牙连接。
+- **一键截屏**：在设置中开启“截图”，只保存游戏画面至 `Pictures/Open Meets` 独立相册，搭配无声的闪白动画。
+- **删除当前存档**：在进度管理中二次确认后删除当前 ROM 的存档并重置，其他 ROM 的进度保留。
 - **中文 / English 界面**：菜单、帮助和通知可切换语言；游戏文字由 ROM 决定。
 - **手机与平板适配**：横竖屏、圆形 A/B/C 按键、多点触控 A+C。
 - **WebMeets 收礼**：通过蓝牙从另一台设备上的 WebMeets 接收物品。
@@ -59,7 +62,21 @@ Open Meets 是面向 Android 手机和平板的 Tamagotchi Meets / On 模拟器�
 
 **保存与恢复**：在设置中导出 `.t18s` 备份；导入时使用与当前 ROM 版本匹配的存档。卸载应用会删除本地 ROM 和进度。
 
-**养育模式**：设置、首次启动和更新说明均提供“是否开启后台驻留”开关。新用户默认开启，升级保留原设置；关闭即使用普通模式。保持 ROM 内的声音开启以检测呼叫，应用菜单静音仍保留安静通知。请允许通知和“闹钟与提醒”；未允许精确闹钟时通知可能延迟。系统设置中的“强行停止”会阻止通知，重新打开应用后恢复。长时间离线后可能需要等待成长同步完成。
+**养育模式**：设置中提供“是否开启后台驻留”开关。新用户默认开启，升级保留原设置；关闭即使用普通模式。保持 ROM 内的声音开启以检测呼叫，应用菜单静音仍保留安静通知。请允许通知和“闹钟与提醒”；未允许精确闹钟时通知可能延迟。系统设置中的“强行停止”会阻止通知，重新打开应用后恢复。长时间离线后可能需要等待成长同步完成。
+
+## 小屏模式与截图
+
+在 **设置 → 外观 → 小屏模式** 中开启。首次进入时双指捏合预览、调整大小并保存；之后切换模式会沿用已保存的大小。需要重新调整时，点小屏模式下方的 **调整大小**。
+
+小屏操作：左侧为 A，中间为 B，右侧下方三分之二为 C。**长按右上方三分之一约一秒，返回极简模式**。支持 A+C 双指组合。
+
+在设置中开启 **截图** 后：
+
+- **极简模式**：点击游戏屏幕上方的相机快门。
+- **真机模式**：点击外壳上的蝴蝶结。
+- **小屏模式**：双击中间上方三分之一区域；B 键使用中间下方三分之二。
+
+图片仅包含原始游戏画面，保存到 `Pictures/Open Meets` 独立相册。截图时画面从上到下闪白，不播放快门声。
 
 ## WebMeets 与 Mixing Meets
 
@@ -89,7 +106,7 @@ WebMeets 收礼和 Mixing Meets 往返已完成 Android 模拟器链路验证；
 
 ## 版本显示
 
-发行版本为 **0.16.0**。Android 应用信息中仍可能显示 **1.4.3**，这是内置客户端所需的兼容编号；本次使用的安装包为 build 20。
+发行版本与 Android 应用信息均为 **0.3.0**，内部版本号为 **21**。可直接覆盖此前 build 20 的正式版。
 
 ## 反馈与致谢
 
@@ -113,9 +130,9 @@ This repository hosts downloads, release notes and user documentation. Applicati
 
 ### Download
 
-**Android 8.0 or later · ARM64 · Stable release 0.16.0**
+**Android 8.0 or later · ARM64 · Stable release 0.3.0**
 
-**[Download Open-Meets-0.16.0-arm64.apk — 86.6 MiB](https://github.com/kanatallow/Open-Meets/releases/download/v0.16.0/Open-Meets-0.16.0-arm64.apk)**
+**[Download Open-Meets-0.3.0-arm64.apk — 86.6 MiB](https://github.com/kanatallow/Open-Meets/releases/download/v0.3.0/Open-Meets-0.3.0-arm64.apk)**
 
 Includes the emulator, background care, notifications, save management, WebMeets BLE reception and the embedded ARM64 Mixing Meets client.
 
@@ -126,16 +143,33 @@ Install the APK, open **Open Meets**, and import your own ROM or an unencrypted 
 ### Everyday use
 
 - **Controls:** A selects, B confirms, C goes back. Hold A+C together when needed; press any button to wake the display.
-- **Appearance:** choose Device or Minimal in Settings without changing your progress.
+- **Appearance:** choose Device, Minimal or Small screen in Settings without changing your progress. Small screen uses the current window size and screen shape, with a saved pinch-to-resize adjustment.
+- **In-game camera:** the photo animation now plays normally without triggering an unrelated Bluetooth connection.
+- **Screenshots:** enable Screenshots in Settings to save just the game image to the dedicated `Pictures/Open Meets` album, with a silent white sweep animation.
+- **Delete current save:** confirm the red option in save management to remove the current ROM’s save and reset it. Other ROMs keep their progress.
 - **ROM library:** import individual ROMs or ZIPs, then switch from the saved ROMs list. Each version keeps separate progress; only the selected version continues care.
 - **Saves:** autosave runs every 30 seconds. Export a `.t18s` backup or import one matching the current ROM version from Settings.
 - **Normal mode:** turn off background residence to schedule care reminders and keep raising time synchronized after the app closes. Offline growth is synchronized when you return.
 - **Enhanced mode (background residence):** supports continuous small-window operation and faster responses on some Android devices. Detected interruptions fall back to normal mode; returning to the foreground restores enhanced mode. Manually selected normal mode stays selected.
 - **Pause:** stops growth and reminders in both modes, remains paused after reopening, and excludes paused time when resumed.
-- **Preferences:** the residence switch appears in Settings, first launch and update notes. New users default to on; upgrades preserve their choice.
+- **Preferences:** the residence switch appears in Settings. New users default to on; upgrades preserve their choice.
 - **Reminders:** allow notifications and Alarms & reminders. Keep sound enabled inside the game for call detection; app-level mute still allows silent notifications. Without exact-alarm permission, alerts may be delayed. Android Force stop blocks notifications until the app is reopened. Long absences may require time to synchronize growth.
 
 **Huawei HarmonyOS users are strongly advised to use normal mode so raising time remains synchronized with real time and pets continue growing after the app closes.**
+
+### Small screen and screenshots
+
+Select **Settings → Appearance → Small screen**. On first use, pinch the preview to adjust the game size and save it. Later mode changes keep your saved size. Use **Resize** below Small screen to adjust it again.
+
+Tap the left third for A, the middle for B, and the lower two thirds of the right side for C. **Hold the upper-right third for about one second to return to Minimal.** A+C supports two-finger input.
+
+Enable **Screenshots** in Settings, then:
+
+- **Minimal:** tap the camera shutter above the game screen.
+- **Device:** tap the bow on the shell.
+- **Small screen:** double-tap the upper third of the middle column. B uses the lower two thirds of that column.
+
+Only the original game image is saved, in the dedicated `Pictures/Open Meets` album. A silent white sweep runs from top to bottom when capturing.
 
 ### Connections
 
@@ -149,7 +183,7 @@ Supported ROMs: **ON** Fairy, Magic and Wonder Garden (English); **MEETS** Fairy
 
 ### Version shown by Android
 
-The release version is **0.16.0**. Android app information may still show **1.4.3**, the compatibility version required by the embedded client. The packaged app is build 20.
+The release and Android app version are both **0.3.0**, with internal version code **21**. Install directly over the previous build 20 release.
 
 ### Feedback and credits
 
